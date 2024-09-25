@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Taylor Swift Quiz Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to the Ultimate Taylor Swift Quiz!</h1>
+            <h2>Test your knowledge of Taylor Swift's lyrics, music videos, and more. Are you a true Swiftie?</h2>
+            <a href="#quiz" class="start-btn">Start the Quiz</a>
+        </section>
+
+        <section id="level-popup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h2>Choose Your Difficulty Level</h2>
+                <button class="level-btn" onclick="startQuiz('easy')">Easy</button>
+                <button class="level-btn" onclick="startQuiz('medium')">Medium</button>
+                <button class="level-btn" onclick="startQuiz('level13')">Level 13</button>
+            </div>
+        </section>
+
+        <section id="quiz-section" class="question-container" style="display: none;">
+            <div class="question-content"></div>
+            <button class="back-btn" onclick="goBack()" style="display: none;">Back to Home</button>
+        </section>
+
+        <section id="about">
+            <h1>About This Quiz</h1>
+            <p>This quiz is a fun way to challenge yourself on all things Taylor Swift, from her lyrics to her music videos and beyond.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Taylor Swift Quiz.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

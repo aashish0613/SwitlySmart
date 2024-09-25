@@ -1,0 +1,183 @@
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #282c34;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #61dafb;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: linear-gradient(to right, rgba(40, 44, 52, 0.8), rgba(97, 218, 251, 0.8)), url('background.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.start-btn {
+    padding: 12px 36px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.3em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.start-btn:hover {
+    background-color: #ff4c4c;
+}
+
+.popup {
+    display: none; /* Hide the popup initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+}
+
+.level-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.level-btn:hover {
+    background-color: #ff4c4c;
+}
+
+.question-container {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    display: none; /* Hide question section initially */
+    text-align: center; /* Center align text */
+}
+
+.question {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+}
+
+.options li {
+    margin: 10px 0; /* Add margin for each option */
+}
+
+.option-btn {
+    padding: 12px 20px;
+    background-color: white; /* White background for options */
+    border: 2px solid black; /* Black border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.option-btn:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.back-btn {
+    padding: 12px 20px;
+    background-color: #ff6b6b; /* Same color as other buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px; /* Space above button */
+}
+
+.back-btn:hover {
+    background-color: #ff4c4c; /* Hover effect for back button */
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Keep the footer at the bottom */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
